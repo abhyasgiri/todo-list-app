@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title> Abhyas' Todo List - {{ title }}</title>         #this title appears on the tab of the title
+    </head>
+    <body>
+        <h1>Abhyas' Todo List {{ title }}</h1>          #this title appears on the top of the page
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('create') }}">Create Task</a>         #links which show up at the top of the page
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>
